@@ -1,0 +1,19 @@
+<!--miniprogram/frontendPages/subscriptions/subscriptions.wxml-->
+<view class="header">
+  我关注的
+</view>
+<view class="topics">
+  test text1
+  test text1
+  test text1
+  test text1
+  test text1
+  test text1test text1
+  test text1test text1
+  test text1test text1test text1
+  test text1
+  test text1test text1test text1
+  test text1
+  test text1
+  test text1test text1test text1
+</view>

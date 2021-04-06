@@ -1,0 +1,19 @@
+<!--miniprogram/frontendPages/trending/trending.wxml-->
+<swiper class="trendingList" wx wx:for="{{}}" wx:key="">
+  <image src=""></image>
+  <text class="topics">{{topics}}</text>
+  <text class="content">{{content}}</text>
+</swiper>
+
+<view class="trendingList">test</view>
+<view class="trendingList">test</view>
+<view class="trendingList">test</view>
+<view class="trendingList">test</view>
+<view class="trendingList">test</view>
+<view class="trendingList">test</view>
+<view class="trendingList">test</view>
+<view class="trendingList">test</view>
+
+<view class="trendingList" wx:for="{{trendingList}}">
+  <view>标题：{{trendingList}}，#：{{trendingList}}，内容：{{trendingList}}</view>
+</view>

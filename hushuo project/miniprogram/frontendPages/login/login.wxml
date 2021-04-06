@@ -1,0 +1,19 @@
+<!--miniprogram/frontendPages/login/login.wxml-->
+<image src="../../images/u=857560321,4229022652&fm=26&fmt=auto&gp=0.webp" mode="aspectFit"></image>
+
+<view class="page-section">
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input"  maxlength="10" bindinput="bindKeyInput" placeholder="请输入翱翔门户账户"/>
+        <input class="weui-input" password type="text" placeholder="请输入密码" />
+      </view>
+    </view>
+
+    <view class="page-body">
+        <button type="default" plain="true" bindtap="submit">登录</button>
+    </view>
+  </view>
+
+
+
+
