@@ -1,9 +1,28 @@
 /* miniprogram/frontendPages/trending/trending.wxss */
-.trendingList{
+.trendingPostsContainer{
   margin: 5%;
   align-self: center;
   width: 80%;
   height: 400rpx;
   overflow: hidden;
   background-color: lightgrey;
+}
+.topic{
+  margin-bottom: 5%;
+  height: 40rpx;
+  overflow: hidden;
+  font-size: 30rpx;
+  font-style: oblique;
+}
+
+.title{
+  margin-bottom: 5%;
+  height: 50rpx;
+  overflow: hidden;
+  font-size: 40rpx;
+}
+
+.content{
+  margin-top: 5%;
+  font-size: 30rpx;
 }

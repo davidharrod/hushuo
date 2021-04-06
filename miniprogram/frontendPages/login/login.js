@@ -11,7 +11,9 @@ Page({
 
   //点击按钮提交登录请求
   submit: function(e){
-    console.log("1")
+    wx.navigateTo({
+      url: '../subscriptions/subscriptions'
+    })
   },
 
   bindKeyInput: function (e) {
@@ -50,7 +52,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    
   },
 
   /**

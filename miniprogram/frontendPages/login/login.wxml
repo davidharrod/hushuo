@@ -13,7 +13,6 @@
         <button type="default" plain="true" bindtap="submit">登录</button>
     </view>
   </view>
-  <wxs src="../login/login.js">
 
 
 
