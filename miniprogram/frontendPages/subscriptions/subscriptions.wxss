@@ -1,0 +1,13 @@
+/* miniprogram/frontendPages/subscriptions/subscriptions.wxss */
+.header{
+  margin: 3%;
+  align-self: center;
+  font-size: medium;
+}
+
+.topics{
+  align-self: center;
+  width: 80%;
+  height: 200rpx;
+  overflow: scroll;
+}

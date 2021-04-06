@@ -1,0 +1,9 @@
+/* miniprogram/frontendPages/trending/trending.wxss */
+.trendingList{
+  margin: 5%;
+  align-self: center;
+  width: 80%;
+  height: 400rpx;
+  overflow: hidden;
+  background-color: lightgrey;
+}
