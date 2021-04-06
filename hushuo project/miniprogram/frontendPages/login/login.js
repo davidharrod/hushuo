@@ -11,7 +11,9 @@ Page({
 
   //点击按钮提交登录请求
   submit: function(e){
-    console.log("1")
+    wx.navigateTo({
+      url: '../subscriptions/subscriptions'
+    })
   },
 
   bindKeyInput: function (e) {

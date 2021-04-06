@@ -1,25 +1,27 @@
 // miniprogram/frontendPages/trending/trending.js
+const DB = wx.cloud.database().collection("posts")
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    trendingList:[]
+    trendingPosts:[]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(){
-    wx.cloud.database().collection('posts').get()
+    DB.get()
       .then(res => {
         this.setData({
-          trendingList: res.data
-        }) 
+          trendingPosts: res.data
+        })
       })
       .catch(err => {
-      
+        console.log("出问题啦~~",err)
       })
   },
 
