@@ -1,0 +1,6 @@
+<!--miniprogram/frontendPages/post/post.wxml-->
+<view class="detailPostContainer">
+  <view class="titleInDetail">{{post.title}}</view>
+  <view class="topicInDetail">{{post.topic}}</view>
+  <view class="contentInDetail">{{post.content}}</view>
+</view>

@@ -1,34 +1,30 @@
-// miniprogram/frontendPages/trending/trending.js
+// miniprogram/frontendPages/post/post.js
 const DB = wx.cloud.database().collection("posts")
-
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    posts:[]
-  },
-
-  goDetail: function(e){
-    wx.navigateTo({
-      url: '../post/post?id='+e.currentTarget.dataset.id,
-    })
+    post: {}
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad(){
-    DB.get()
-      .then(res => {
-        this.setData({
-          posts: res.data
-        })
+  onLoad: function (options) {
+    var id = options.id
+    DB
+    .doc(id)
+    .get()
+    .then(res => {
+      this.setData({
+        post: res.data
       })
-      .catch(err => {
-        console.log("出问题啦~~",err)
-      })
+    })
+    .catch(err => {
+      console.log("出问题啦~~",err)
+    })
   },
 
   /**

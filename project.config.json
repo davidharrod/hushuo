@@ -39,7 +39,7 @@
   },
   "appid": "wx475dda897708a697",
   "projectname": "hushuo",
-  "libVersion": "2.14.4",
+  "libVersion": "2.16.0",
   "condition": {
     "search": {
       "list": []

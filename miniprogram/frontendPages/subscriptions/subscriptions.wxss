@@ -6,6 +6,7 @@
 }
 
 .topics{
+  margin: 20rpx;
   align-self: center;
   width: 80%;
   height: 200rpx;

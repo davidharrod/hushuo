@@ -154,3 +154,35 @@ page {
   line-height: 36rpx;
   word-break: break-all;
 }
+
+.postsContainer{
+  margin: 5%;
+  align-self: center;
+  width: 80%;
+  height: 400rpx;
+  overflow: hidden;
+  background-color: lightgrey;
+}
+
+.topic{
+  margin-bottom: 5%;
+  height: 40rpx;
+  overflow: hidden;
+  font-size: 30rpx;
+  font-style: oblique;
+  word-break: break-all;
+}
+
+.title{
+  margin-bottom: 5%;
+  height: 50rpx;
+  overflow: hidden;
+  font-size: 40rpx;
+  word-break: break-all;
+}
+
+.content{
+  margin-top: 5%;
+  font-size: 30rpx;
+  word-break: break-all;
+}

@@ -1,26 +1,33 @@
 // miniprogram/frontendPages/subscriptions/subscriptions.js
+const DB = wx.cloud.database().collection("posts")
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    posts:[]
   },
 
-  //展示标签
-  displayTags: function(){
+  goDetail: function(e){
+    wx.navigateTo({
+      url: '../post/post?id='+e.currentTarget.dataset.id,
+    })
+  },
 
-  },
-  //展示帖子
-  displayPost: function(){
-    
-  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    DB.get()
+      .then(res => {
+        this.setData({
+          posts: res.data
+        })
+      })
+      .catch(err => {
+        console.log("出问题啦~~",err)
+      })
   },
 
   /**

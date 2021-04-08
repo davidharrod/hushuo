@@ -4,8 +4,10 @@
 <view class="page-section">
     <view class="weui-cells weui-cells_after-title">
       <view class="weui-cell weui-cell_input">
-        <input class="weui-input"  maxlength="10" bindinput="bindKeyInput" placeholder="请输入翱翔门户账户"/>
-        <input class="weui-input" password type="text" placeholder="请输入密码" />
+        <input class="weui-input"  maxlength="10" bindinput="getId"
+         placeholder="请输入翱翔门户账户"/>
+        <input class="weui-input" password type="text"
+        bindinput="getPwd" placeholder="请输入密码" />
       </view>
     </view>
 

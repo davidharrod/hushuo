@@ -3,17 +3,10 @@
   我关注的
 </view>
 <view class="topics">
-  test text1
-  test text1
-  test text1
-  test text1
-  test text1
-  test text1test text1
-  test text1test text1
-  test text1test text1test text1
-  test text1
-  test text1test text1test text1
-  test text1
-  test text1
-  test text1test text1test text1
+  <view wx:for="{{posts}}">{{item.topic}}</view>
+</view>
+<view class="postsContainer" wx:for="{{posts}}" bindtap="goDetail" data-id="{{item._id}}">
+  <view class="title">{{item.title}}</view>
+  <view class="topic">{{item.topic}}</view>
+  <view class="content">{{item.content}}</view>
 </view>

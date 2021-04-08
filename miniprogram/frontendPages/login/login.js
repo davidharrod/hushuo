@@ -1,20 +1,40 @@
 // miniprogram/frontendPages/login/login.js
-Page({
+const DB = wx.cloud.database().collection("accounts")
+var id
+var pwd
 
+Page({
   /**
    * 页面的初始数据
    */
   data: {
     focus: false,
-    inputValue: ''
+    inputValue: '',
+    account: {}
   },
 
-  //点击按钮提交登录请求
-  submit: function(e){
-    wx.navigateTo({
-      url: '../subscriptions/subscriptions'
-    })
+  getId: function(e){
+    id = e.detail.value
+    console.log(id)
   },
+
+  getPwd: function(e){
+    pwd = e.detail.value
+    console.log(pwd)
+  },
+
+  // //点击按钮提交登录请求,功能未实现，account undefined
+  // submit: function(e,account){
+  //   if(account.pwd == pwd){
+  //     wx.navigateTo({
+  //       url: '../trending/trending'
+  //     })
+  //     console.log("successful")
+  //   }
+  //   else{
+  //     console.log("failed")
+  //   }
+  // },
 
   bindKeyInput: function (e) {
     this.setData({
@@ -52,7 +72,23 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+    var that = this
+    that.getId()
+    that.getPwd()
+
+    DB
+    .where({
+      id:id
+    })
+    .get()
+    .then(res => {
+      this.setData({
+        account: res.data
+      })
+    })
+    .catch(err => {
+      console.log("出问题啦~~",err)
+    })
   },
 
   /**

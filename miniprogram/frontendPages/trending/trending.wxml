@@ -1,5 +1,5 @@
 <!--miniprogram/frontendPages/trending/trending.wxml-->
-<view class="trendingPostsContainer" wx:for="{{trendingPosts}}">
+<view class="postsContainer" wx:for="{{posts}}" bindtap="goDetail" data-id="{{item._id}}">
   <view class="title">{{item.title}}</view>
   <view class="topic">{{item.topic}}</view>
   <view class="content">{{item.content}}</view>
