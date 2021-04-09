@@ -1,0 +1,1 @@
+<button class="logout" type="warn" bindtap="logout">登出</button>

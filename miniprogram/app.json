@@ -1,22 +1,10 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/userConsole/userConsole",
-    "pages/storageConsole/storageConsole",
-    "pages/databaseGuide/databaseGuide",
-    "pages/addFunction/addFunction",
-    "pages/deployFunctions/deployFunctions",
-    "pages/chooseLib/chooseLib",
-    "pages/openapi/openapi",
-    "pages/openapi/serverapi/serverapi",
-    "pages/openapi/callback/callback",
-    "pages/openapi/cloudid/cloudid",
-    "pages/im/im",
-    "pages/im/room/room",
-    "frontendPages/login/login",
-    "frontendPages/subscriptions/subscriptions",
-    "frontendPages/trending/trending",
-    "frontendPages/post/post"
+    "pages/login/login",
+    "pages/trending/trending",
+    "pages/subscriptions/subscriptions",
+    "pages/post/post",
+    "pages/user/user"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -26,5 +14,30 @@
     "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json",
-  "style": "v2"
+  "style": "v2",
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#87CEEB",
+    "list": [
+      {
+        "pagePath": "pages/subscriptions/subscriptions",
+        "text": "关注",
+        "iconPath": "static/images/tabs/subscription.png",
+        "selectedIconPath": "static/images/tabs/subscriptionSelected.png"
+    },
+    {
+      "pagePath": "pages/trending/trending",
+      "text": "热榜",
+      "iconPath": "static/images/tabs/trending.png",
+      "selectedIconPath": "static/images/tabs/trendingSelected.png"
+  },
+    {
+      "pagePath": "pages/user/user",
+      "text": "我",
+      "iconPath": "static/images/tabs/user.png",
+      "selectedIconPath": "static/images/tabs/userSelected.png"
+  }
+
+    ]
+  }
 }

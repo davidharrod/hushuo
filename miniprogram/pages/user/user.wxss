@@ -1,0 +1,6 @@
+/* miniprogram/frontendPages/user/user.wxss */
+.logout{
+  position: absolute;
+  align-self: center;
+  bottom: 80rpx;
+}
