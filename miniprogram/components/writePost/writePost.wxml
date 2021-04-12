@@ -1,0 +1,4 @@
+<image class="writePost" 
+  src="../../static/images/components/writePost/writePost.png"
+  catchtap="writePost">
+</image>

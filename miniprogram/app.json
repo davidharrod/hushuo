@@ -4,7 +4,8 @@
     "pages/trending/trending",
     "pages/subscriptions/subscriptions",
     "pages/post/post",
-    "pages/user/user"
+    "pages/user/user",
+    "pages/writePost/writePost"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -24,20 +25,22 @@
         "text": "关注",
         "iconPath": "static/images/tabs/subscription.png",
         "selectedIconPath": "static/images/tabs/subscriptionSelected.png"
-    },
-    {
-      "pagePath": "pages/trending/trending",
-      "text": "热榜",
-      "iconPath": "static/images/tabs/trending.png",
-      "selectedIconPath": "static/images/tabs/trendingSelected.png"
-  },
-    {
-      "pagePath": "pages/user/user",
-      "text": "我",
-      "iconPath": "static/images/tabs/user.png",
-      "selectedIconPath": "static/images/tabs/userSelected.png"
-  }
-
+      },
+      {
+        "pagePath": "pages/trending/trending",
+        "text": "热榜",
+        "iconPath": "static/images/tabs/trending.png",
+        "selectedIconPath": "static/images/tabs/trendingSelected.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我",
+        "iconPath": "static/images/tabs/user.png",
+        "selectedIconPath": "static/images/tabs/userSelected.png"
+      }
     ]
+  },
+  "usingComponents": {
+    "writePost": "/components/writePost/writePost"
   }
 }

@@ -3,4 +3,5 @@
   <view class="title">{{item.title}}</view>
   <view class="topic">{{item.topic}}</view>
   <view class="content">{{item.content}}</view>
+  <writePost></writePost>
 </view>

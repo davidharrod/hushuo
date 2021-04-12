@@ -10,3 +10,4 @@
   <view class="topic">{{item.topic}}</view>
   <view class="content">{{item.content}}</view>
 </view>
+<writePost></writePost>

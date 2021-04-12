@@ -1,0 +1,9 @@
+.writePost{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius:50%;
+  position: fixed;
+  right: 40rpx;
+  bottom: 40rpx;
+  background-color:#87CEEB;
+}
