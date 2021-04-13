@@ -1,11 +1,11 @@
 {
   "pages": [
-    "pages/login/login",
+    "pages/writePost/writePost",
     "pages/trending/trending",
+    "pages/login/login",
     "pages/subscriptions/subscriptions",
-    "pages/post/post",
     "pages/user/user",
-    "pages/writePost/writePost"
+    "pages/post/post"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",

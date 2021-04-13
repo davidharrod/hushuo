@@ -1,1 +1,36 @@
 /* miniprogram/pages/writePost/writePost.wxss */
+.textAndImg{
+  align-self: center;
+  width: 80%;
+}
+
+picker-view{
+  margin-bottom: 2rem;
+  align-self: center;
+  width: 100%;
+  height: 300rpx;
+}
+
+.addTopic{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.text{
+  align-self: center;
+  font-size: 0.8em;
+  width: 100%;
+}
+
+.submit{
+  width: 80rpx;
+  height: 80rpx;
+  position: fixed;
+  right: 40rpx;
+  bottom: 60rpx;
+}
+
+.addTitle{
+  font-size: 1.2rem;
+  margin-top: 2rem;
+}

@@ -76,3 +76,8 @@ Page({
 
   }
 })
+//底部栏的html代码
+{/* <view class="commentOrSubscribe">
+    <image mode="aspectFit" src="/../../static/images/writePost/comment.png"></image>
+    <image mode="aspectFit" src="/../../static/images/writePost/subscribe.png"></image>
+  </view> */}

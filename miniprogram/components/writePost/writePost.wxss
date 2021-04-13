@@ -7,3 +7,8 @@
   bottom: 40rpx;
   background-color:#87CEEB;
 }
+
+.addTopic{
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}

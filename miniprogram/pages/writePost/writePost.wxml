@@ -1,2 +1,18 @@
-<!--miniprogram/pages/writePost/writePost.wxml-->
-<text>miniprogram/pages/writePost/writePost.wxml</text>
+<view>新的动态</view>
+<image src="../../static/images/writePost/submit.png" class="submit" 
+mode="aspectFit" catchtap="submit"></image>
+<view class="textAndImg">
+  <input class="addTitle" maxlength="-1" bindinput="getTitle" placeholder="先来个标题吧~"/>
+  <view class="addTopic">
+    <button class="btn" hover-class="none" bindtap="showPicker" >
+      <text class="text">{{buttonContent}}</text>
+    </button>
+  </view>
+  <picker-view hidden="{{isPickerHidden}}"bindchange="bindChange" bindpickend="confirmTopic">
+    <picker-view-column>
+      <view wx:for="{{posts}}">{{item.topic}}</view>
+    </picker-view-column>
+  </picker-view>
+  <textarea bindinput="getContent"
+  auto-height placeholder="畅所欲言O(∩_∩)O" maxlength="-1"/>
+</view>
